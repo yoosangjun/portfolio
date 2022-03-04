@@ -1,15 +1,176 @@
 @import "./bass.css";
 
+/* base */
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+
+/* Global */
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-black: #4d4d4d;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue: #73aace;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-black: #000000;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Annimation */
+  --animation-duration: 300ms;
+}
+
+/* Universal tags */
+* {
+  box-sizing: border-box;
+  font-family: Toss Product Sans, -apple-system, BlinkMacSystemFont,
+    Bazier Square, Noto Sans KR, Segoe UI, Apple SD Gothic Neo, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Typography */
+
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 4px 0;
+}
+
+span {
+  color: var(--color-white);
+}
+/* Common */
+
 .linebreak {
   /* display: none; */
 }
+
 li {
   font-weight: bold;
   font-size: 15px;
 }
-main {
-  width: 100%;
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 38px;
 }
+
+.section__title--icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.section__title {
+  font-size: 28px;
+  color: rgb(49, 130, 246);
+  margin-bottom: 30px;
+}
+
+.section__title--mini {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: rgb(49, 130, 246);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.section__description {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 80px;
+}
+.section__description--mini {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section__description--mini {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.section__description--darkgray {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgb(107, 118, 132);
+}
+
 /* header */
 header {
   margin: auto;
@@ -124,11 +285,8 @@ header {
   align-items: center;
   max-width: 1140px;
   margin: auto;
-}
-.part3__description {
-  font-size: 50px;
-  font-weight: bold;
-  margin-bottom: 100px;
+  padding-top: 250px;
+  padding-bottom: 165px;
 }
 
 .p3ani {
@@ -143,24 +301,18 @@ header {
   margin-top: 66px;
 }
 
-.p3ani__one--2 {
+.p3ani__one__2 {
   background-color: black;
   width: 342px;
   height: 749px;
 }
-.p3ani__two--1 {
+.p3ani__two__1 {
   background-color: blanchedalmond;
   width: 342px;
   height: 749px;
 }
 
-.section__title {
-  font-size: 28px;
-  color: #3182f6;
-  margin-bottom: 30px;
-}
-
-.p3ani__two__description {
+.two__description {
   margin-top: 100px;
   font-size: 23px;
   font-weight: 600;
@@ -172,6 +324,7 @@ header {
 .part4 {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   max-width: 1140px;
   margin: auto;
@@ -179,71 +332,24 @@ header {
   /* background-color: white; */
 }
 
-.p4box {
+.part4__first {
   width: 92%;
-}
-
-.p4box__first {
-}
-
-.p4box__second {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-
-.p4box__second--video {
-  width: 618px;
-  height: 420px;
-  background-color: aqua;
-}
-
-.p4box__second--text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.p4box__second--text > p {
-  font-size: 27px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.p4box__third {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-}
-
-.p4box__third__left {
-  background-color: black;
-  width: 330px;
-  height: 500px;
-  margin-bottom: 30px;
-  margin-right: 30px;
-}
-
-.p4box__third__right {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  margin: 0 auto;
 }
-
-.p4box__third__right--img {
-  background-color: black;
-  width: 540px;
-  height: 332px;
-}
-
-.p4box__third__right--text {
+.part4__second {
   display: flex;
-  /* justify-content: start; */
-  margin: 30px 0;
+  justify-content: space-between;
+  margin-bottom: 150px;
 }
-.p4box__third__right--text > p {
-  font-size: 23px;
-  font-weight: 600;
-  line-height: 1.5;
+
+.part4--img {
+  width: 500px;
+  height: 375px;
+}
+
+.part4__third {
+  display: flex;
+  justify-content: space-between;
 }
