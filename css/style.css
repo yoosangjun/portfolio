@@ -1,8 +1,8 @@
 @import "./bass.css";
 
-
-
-
+.linebreak {
+  /* display: none; */
+}
 li {
   font-weight: bold;
   font-size: 15px;
@@ -154,7 +154,7 @@ header {
   height: 749px;
 }
 
-.p3ani__title {
+.section__title {
   font-size: 28px;
   color: #3182f6;
   margin-bottom: 30px;
