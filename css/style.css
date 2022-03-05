@@ -116,6 +116,10 @@ li {
   font-size: 15px;
 }
 
+.part__innerbox {
+  width: 92%;
+}
+
 /* header */
 header {
   margin: auto;
@@ -326,7 +330,6 @@ header {
 }
 
 .p4box {
-  width: 100%;
 }
 
 .p4box__first {
