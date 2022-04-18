@@ -1,248 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="https://static.toss.im/tds/favicon/favicon.ico"
-    />
+    <title>b9's portfolio</title>
+    <meta name="description" content="b9's portfolio" />
+    <meta name="author" content="b9's" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/css/style.css" />
-    <title>토스</title>
+    <link rel="icon" type="image/png" href="./imgs/ican.png" />
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav id="navbar">
-        <div class="navbar__logo">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 453.07 120"
-            class=" "
-          >
-            <path
-              d="M124.25 59.34a54.37 54.37 0 00-53.4-48.06h-.6a54.58 54.58 0 00-27.31 7.35l-.41.25-.36.21C11.09 37.6 0 80.34 0 106.36l25-14.45c8.82 16.81 25.75 27.88 44.62 28.09h.6a53.62 53.62 0 006.3-.37 54.37 54.37 0 0047.73-60.29zM399.63 86.56c3.67 7.29 10.23 11.08 18.91 11.06 8.52 0 13.08-4.15 13.06-9 0-5.93-8.84-7.28-19.36-9.38-13.85-2.88-29.24-7.1-29.24-24.45 0-13.85 13.33-25.91 33.58-25.81 16.08 0 26.17 5.56 33.64 15.09L432.73 54.2c-3.36-5.47-8.55-8.65-16.16-8.63-8.22 0-12.17 3.38-12.16 8 0 5.17 6.72 6.52 18.75 9.08 13.71 2.7 29.86 7.38 29.91 25 0 12.79-11.35 27.27-35.25 27.19-18 .05-29.93-6.17-36.83-17.44zM324.52 86.56c3.68 7.29 10.23 11.08 18.91 11.06 8.52 0 13.08-4.15 13.07-9 0-5.93-8.85-7.28-19.36-9.38-13.86-2.86-29.25-7.08-29.29-24.43 0-13.85 13.32-25.91 33.57-25.81 16.09 0 26.17 5.56 33.65 15.09L357.62 54.2c-3.36-5.47-8.55-8.65-16.16-8.63-8.22 0-12.17 3.38-12.15 8 0 5.17 6.71 6.52 18.75 9.08 13.7 2.7 29.85 7.38 29.9 25 0 12.79-11.34 27.27-35.25 27.19-18 .05-29.93-6.17-36.82-17.44zM258.26 29a42.92 42.92 0 1042.92 42.9A42.93 42.93 0 00258.26 29zm0 65.81a22.89 22.89 0 1122.89-22.91 22.89 22.89 0 01-22.89 22.89zM204.23 89.13c-2.64 2.11-8.17 4.71-10.94 4.71-5.38 0-9.07-3.07-9.07-11.83V49.4h25.55V30.66h-25.55V0l-21.29 12.29v18.37h-17V49.4h17v34.52c0 22.6 10.54 30.9 27.9 30.9 7.68 0 17.93-4.55 23.3-8.54z"
-              fill="#0064ff"
-            ></path>
-          </svg>
-        </div>
-        <ul class="navbar__item">
-          <li class="navbar__item__list"><a href="#">회사 소개</a></li>
-          <li class="navbar__item__list"><a href="#">고객센터</a></li>
-          <li class="navbar__item__list"><a href="#">자주 묻는 질문</a></li>
-          <li class="navbar__item__list"><a href="#">공동인증서 관리</a></li>
-          <li class="navbar__item__list"><a href="#">채용</a></li>
-          <div class="navbar__language">
-            <li class="navbar__item__list">
-              <a href="#" class="language__kor">KOR</a>
-            </li>
-            <span style="color: grey">|</span>
-            <li class="navbar__item__list">
-              <a href="#" class="language__eng">ENG</a>
-            </li>
-          </div>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="part1">
-        <img
-          src="https://static.toss.im/3d/toss-im-web-intro-still-start.jpg"
-          alt=""
-          aria-hidden="true"
-          class="part1__img"
-        />
-        <h1 class="part1__maintext">
-          금융의 모든것 <br class="linebreak" />토스에서 쉽고 간편하게
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <img src="./imgs/ican.png" alt="" class="logoimg" />
+        <a href="">b9's</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#testimonials">
+          Testimonial
+        </li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <button class="arrow">
+        <i class="fas fa-arrow-circle-up"></i>
+      </button>
+    </nav>
+    <!-- HOME -->
+    <section id="home" class="section">
+      <div class="home__container">
+        <img src="./imgs/너.jpg" alt="" class="home__avatar" />
+        <h1 class="home__title">
+          안녕하세요<br />
+          유상준입니다
         </h1>
-        <div class="appstore">
-          <a href="" class="appstore__btn"
-            ><img
-              src="https://static.toss.im/png-icons/timeline/applekorea.png"
-              width="20"
-              height="20"
-              props="[object Object]"
-              class="css-12l0p1z"
-            />App store</a
-          >
-          <a href="" class="appstore__btn"
-            ><img
-              src="https://static.toss.im/png-icons/timeline/googleplay.png"
-              width="20"
-              height="20"
-              props="[object Object]"
-              class="css-12l0p1z"
-            />Google Play</a
-          >
-        </div>
-      </section>
-      <section class="part2">
-        <p class="part2__description">
-          내 모든 금융 내역을 한눈에 조회하고 한 곳에서 관리하세요.
+        <h2 class="home__description">개발자</h2>
+        <button class="home__contact">CONTACT ME</button>
+      </div>
+    </section>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section__container">
+        <h1 class="about__title">About me</h1>
+        <p>
+          개발공부는 1년째하고 있으며 해봤던 개인 프로젝트 중에선 JAVA 콘솔 게임
+          제작 (멀티 쓰레드구현), JAVA기반 Android 프로젝트 술게임 어플,
+          공연정보 어플 제작 웹은 HTML,CSS, JAVASCRIPT 프론엔드 웹 제작 다수
+          현재는 node.js와 리액트 프레임워크를 공부중입니다.
         </p>
-        <p class="part2__description">
-          이제껏 경험 못 했던 쉽고 편리한 금융 서비스,
+        <div class="about__majors">
+          <div class="major">
+            <div class="major__icon"><i class="fab fa-html5"></i></div>
+            <h2 class="major__title">Front-end</h2>
+            <div class="major__description">HTML,CSS,JAVASCRIPT</div>
+          </div>
+          <div class="major">
+            <div class="major__icon"><i class="fab fa-java"></i></div>
+            <h2 class="major__title">JAVA</h2>
+            <div class="major__description">JAVA,Android</div>
+          </div>
+          <div class="major">
+            <div class="major__icon"><i class="fab fa-react"></i></div>
+            <h2 class="major__title">React</h2>
+            <div class="major__description">React</div>
+          </div>
+        </div>
+        <div class="about__jobs">
+          <div class="job">
+            <img src="/imgs/jobs/kdb.png" alt="" class="job__logo" />
+            <div class="job__description">
+              <p class="job__name">ddd</p>
+              <p class="job__period">ddd</p>
+            </div>
+          </div>
+          <div class="job">
+            <img src="/imgs/jobs/kdb.png" alt="" class="job__logo" />
+            <div class="job__description">
+              <p class="job__name">ddd</p>
+              <p class="job__period">ddd</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+          새로운 영역을 탐구 하는것을 즐기고 고통을 즐길줄 아는 개발자입니다
+          시간약속을 철저히 지키며 항상 배움의 자세가 준비되어 있습니다.
         </p>
-        <h2 class="part2__description">
-          토스와 함께라면 당신의 일상이 새로워질 거예요.
-        </h2>
-      </section>
-      <section class="part3">
-        <div class="p3ani part__innerbox">
-          <div class="p3ani__one">
-            <div class="p3ani__one__1">
-              <h2 class="section__title">홈 · 소비</h2>
-              <p class="section__description">
-                내 돈 관리, <br class="linebreak" />지출부터 일정까지
-                <br class="linebreak" />똑똑하게
-              </p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>99%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 99%"></div>
+              </div>
             </div>
-            <div class="p3ani__one__img">
-              <img src="/imgs/p3ani_img1.png" class="p3ani__one--img1" alt="" />
-              <img src="/imgs/p3ani_img3.png" class="p3ani__one--img3" alt="" />
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JAVASCRIPT</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JAVA</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Node.js</span>
+                <span>30%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 30%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>React</span>
+                <span>30%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 30%"></div>
+              </div>
             </div>
           </div>
-          <div class="p3ani__two">
-            <div class="p3ani__two__img">
-              <img src="/imgs/p3ani_img1.png" class="p3ani__one--img1" alt="" />
-              <img src="/imgs/p3ani_img2.png" class="p3ani__one--img2" alt="" />
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Eclips</span></li>
+                <li><span>Android Studio Code</span></li>
+              </ul>
             </div>
-            <div class="p3ani__two__2">
-              <h3 class="p3ani__two__description">
-                토스에 계좌와 카드를 연결해 보세요.<br class="linebreak" />
-                잔고, 대출투자 내역은 기본,<br class="linebreak" />
-                카드 실적 달성과 일자별 소비와 수입을<br class="linebreak" />
-                한 번에 볼 수 있어요.
-              </h3>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="part4">
-        <div class="p4box part__innerbox">
-          <div class="p4box__first">
-            <h2 class="section__title">송금</h2>
-            <p class="section__description">
-              간편하고 안전하게<br class="linebreak" />
-              수수료는 평생 무료로,<br class="linebreak" />
-              이런 송금 써보셨나요?
-            </p>
-          </div>
-          <div class="p4box__second">
-            <div class="p4box__second__box">
-              <p class="section__title--mini">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="section__title--icon"
-                >
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <g
-                    fill="none"
-                    stroke="#007ff2"
-                    stroke-width="1.8"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
-                  >
-                    <path
-                      d="M16.25 8.92l-1.85 6.71c-.06.2-.34.2-.4 0l-1.8-6.56c-.06-.2-.34-.2-.4 0L10 15.63c-.06.2-.34.2-.4 0L7.75 8.92M15.3 12.35H18M8.7 12.35H6"
-                    ></path>
-                  </g>
-                  <circle cx="12" cy="1.97" r="1.98" fill="#4d9cff"></circle>
-                  <circle
-                    transform="rotate(-60 3.313 6.985)"
-                    cx="3.31"
-                    cy="6.98"
-                    fill="#74b6ff"
-                    r="1.98"
-                  ></circle>
-                  <circle
-                    transform="rotate(-30 3.312 17.015)"
-                    cx="3.31"
-                    cy="17.02"
-                    fill="#007ff2"
-                    r="1.98"
-                  ></circle>
-                  <circle cx="12" cy="22.03" r="1.98" fill="#4d9cff"></circle>
-                  <circle
-                    transform="rotate(-60 20.687 17.016)"
-                    cx="20.69"
-                    cy="17.02"
-                    fill="#74b6ff"
-                    r="1.98"
-                  ></circle>
-                  <circle
-                    transform="rotate(-30 20.686 6.986)"
-                    cx="20.69"
-                    cy="6.98"
-                    fill="#007ff2"
-                    r="1.98"
-                  ></circle></svg
-                >평생 무료 송금
-              </p>
-              <p class="section__description--mini">
-                토스 평생 무료송금으로 <br class="linebreak" />
-                모두의 금융에 자유를
-              </p>
-              <p class="section__description--darkgray">
-                누구에게 보내든 은행 상관없이,<br class="linebreak" />
-                이제 토스와 함께 수수료 걱정 없이 송금하세요.
-              </p>
-            </div>
-            <img
-              src="/imgs/p4box_img1.png"
-              alt="토스이미지"
-              class="p4box--img"
-            />
-          </div>
-          <div class="p4box__third">
-            <img
-              src="/imgs/p4box_img2.png"
-              alt="토스이미지"
-              class="p4box--img"
-            />
-            <div class="p4box__third box">
-              <p class="section__title--mini">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="section__title--icon"
-                >
-                  <path
-                    d="M11.6.7L2.9 4.2c-.4.2-.7.6-.7 1v8.3c0 3.8 4.8 7.5 9.3 9.8.3.1.6.1.9 0 4.5-2.3 9.3-6 9.3-9.8V5.2c0-.4-.2-.8-.6-.9L12.4.7c-.3-.1-.6-.1-.8 0z"
-                    fill="#007ff7"
-                  ></path>
-                  <path
-                    d="M10.9 15.8c-.3 0-.5-.1-.7-.3l-3.4-3.4c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l2.7 2.7 4.9-4.9c.4-.4 1-.4 1.4 0s.4 1 0 1.4l-5.6 5.6c-.2.2-.4.3-.7.3z"
-                    fill="#fff"
-                  ></path></svg
-                >사기계좌 조회
-              </p>
-              <p class="section__description--mini">
-                송금 전 사기내역 조회로 <br class="linebreak" />
-                피해를 미리 방지할 수 있어요
-              </p>
-              <p class="section__description--darkgray">
-                송금 전 토스가 알아서 사기내역 조회를 해드려요.<br
-                  class="linebreak"
-                />
-                상대방의 연락처 또는 계좌가 사기 계좌인지 조회해<br
-                  class="linebreak"
-                />안전하게 송금할 수 있어요.
-              </p>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-      <section class="part5"></section>
-    </main>
+      </div>
+    </section>
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="section__container">
+        <h1 class="work__title">My work</h1>
+        <h3 class="work__projects">Projects</h3>
+        <div class="work__categories">
+          <button class="category__btn selected" data-filter="*">
+            All<span class="category__count">8</span>
+          </button>
+          <button class="category__btn" data-filter="Front-end">
+            Front-end<span class="category__count">3</span>
+          </button>
+          <button class="category__btn" data-filter="Back-end">
+            Back-end<span class="category__count">3</span>
+          </button>
+          <button class="category__btn" data-filter="Mobile">
+            Mobile<span class="category__count">2</span>
+          </button>
+        </div>
+        <div class="work__projects">
+          <a href="" class="project" target="_blank" data-type="Front-end">
+            <img src="./imgs/project1.jpg" alt="" class="project__img" />
+            <div class="project__description">
+              <h3>Android Project</h3>
+              <span>JAVA</span>
+            </div>
+          </a>
+          <a href="" class="project" target="_blank" data-type="Back-end">
+            <img src="./imgs/project2.jpg" alt="" class="project__img" />
+            <div class="project__description">
+              <h3>Android Project</h3>
+              <span>JAVA</span>
+            </div>
+          </a>
+          <a href="" class="project" target="_blank" data-type="Mobile">
+            <img src="./imgs/project2.jpg" alt="" class="project__img" />
+            <div class="project__description">
+              <h3>Android Project</h3>
+              <span>JAVA</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <h1>Testimonials</h1>
+      <h3>See whatthey say about me</h3>
+      <div class="testimonials">
+        <div class="testimonial">
+          <img
+            src="./imgs/testimonial/너2.jpg"
+            alt=""
+            class="testmonial__avatar"
+          />
+          <div class="testimonial__speech-buble">
+            <p>아무말</p>
+            <p class="name"><a href="">b9's</a> / KDB</p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__speech-buble">
+            <p>아무말</p>
+            <p class="name"><a href="">b9's</a> / KDB</p>
+          </div>
+          <img
+            src="./imgs/testimonial/너2.jpg"
+            alt=""
+            class="testmonial__avatar"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="section__container">
+        <h1 class="contact__title">Let's talk</h1>
+        <h2 class="contact__email">love2ysj@nate.com</h2>
+        <div class="contact__links">
+          <a href="https://github.com/yoosangjun/portfolio"
+            ><i class="fab fa-git"></i
+          ></a>
+          <a href="https://github.com/yoosangjun/portfolio"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+        <p class="contact__right">2021 b9's - All rights reserved</p>
+      </div>
+    </section>
   </body>
 </html>
