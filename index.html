@@ -1,278 +1,42 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>b9's portfolio</title>
-    <meta name="description" content="b9's portfolio" />
-    <meta name="author" content="b9's" />
+    <title>먹튀인벤</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-      crossorigin="anonymous"
-    />
-    <link rel="icon" type="image/png" href="./imgs/ican.png" />
-    <script src="./js/index.js" defer></script>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div class="navbar__logo">
-        <img src="./imgs/ican.png" alt="" class="logoimg" />
-        <a href="">b9's</a>
-      </div>
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item" data-link="#home">Home</li>
-        <li class="navbar__menu__item" data-link="#about">About</li>
-        <li class="navbar__menu__item" data-link="#skills">Skills</li>
-        <li class="navbar__menu__item" data-link="#work">My work</li>
-        <li class="navbar__menu__item" data-link="#testimonials">
-          Testimonial
-        </li>
-        <li class="navbar__menu__item" data-link="#contact">Contact</li>
-      </ul>
-      <!-- Toggle button -->
-      <button class="navbar__toggle-btn">
-        <i class="fas fa-bars"></i>
-      </button>
-      <button class="arrow">
-        <i class="fas fa-arrow-circle-up"></i>
-      </button>
-    </nav>
-    <!-- HOME -->
-    <section id="home" class="section">
-      <div class="home__container">
-        <img src="./imgs/너.jpg" alt="" class="home__avatar" />
-        <h1 class="home__title">
-          안녕하세요<br />
-          유상준입니다
-        </h1>
-        <h2 class="home__description">개발자</h2>
-        <button class="home__contact">CONTACT ME</button>
-      </div>
-    </section>
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="section__container">
-        <h1 class="about__title">About me</h1>
-        <p>
-          개발공부는 1년째하고 있으며 해봤던 개인 프로젝트 중에선 JAVA 콘솔 게임
-          제작 (멀티 쓰레드구현), JAVA기반 Android 프로젝트 술게임 어플,
-          공연정보 어플 제작 웹은 HTML,CSS, JAVASCRIPT 프론엔드 웹 제작 다수
-          현재는 node.js와 리액트 프레임워크를 공부중입니다.
-        </p>
-        <div class="about__majors">
-          <div class="major">
-            <div class="major__icon"><i class="fab fa-html5"></i></div>
-            <h2 class="major__title">Front-end</h2>
-            <div class="major__description">HTML,CSS,JAVASCRIPT</div>
-          </div>
-          <div class="major">
-            <div class="major__icon"><i class="fab fa-java"></i></div>
-            <h2 class="major__title">JAVA</h2>
-            <div class="major__description">JAVA,Android</div>
-          </div>
-          <div class="major">
-            <div class="major__icon"><i class="fab fa-react"></i></div>
-            <h2 class="major__title">React</h2>
-            <div class="major__description">React</div>
-          </div>
-        </div>
-        <div class="about__jobs">
-          <div class="job">
-            <img src="/imgs/jobs/kdb.png" alt="" class="job__logo" />
-            <div class="job__description">
-              <p class="job__name">ddd</p>
-              <p class="job__period">ddd</p>
-            </div>
-          </div>
-          <div class="job">
-            <img src="/imgs/jobs/kdb.png" alt="" class="job__logo" />
-            <div class="job__description">
-              <p class="job__name">ddd</p>
-              <p class="job__period">ddd</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="section__container">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>
-          새로운 영역을 탐구 하는것을 즐기고 고통을 즐길줄 아는 개발자입니다
-          시간약속을 철저히 지키며 항상 배움의 자세가 준비되어 있습니다.
-        </p>
-        <div class="skillset">
-          <div class="skillset__left">
-            <h3 class="skillset__title">Skills</h3>
-            <div class="skill">
-              <div class="skill__description">
-                <span>HTML</span>
-                <span>99%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 99%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>CSS</span>
-                <span>90%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 90%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>JAVASCRIPT</span>
-                <span>80%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 80%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>JAVA</span>
-                <span>70%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 70%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>Node.js</span>
-                <span>30%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 30%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>React</span>
-                <span>30%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 30%"></div>
-              </div>
-            </div>
-          </div>
-          <div class="skillset__right">
-            <div class="tools">
-              <h3 class="skillset__title">Tools</h3>
-              <ul class="tools__list">
-                <li><span>Visual Studio Code</span></li>
-                <li><span>Eclips</span></li>
-                <li><span>Android Studio Code</span></li>
-              </ul>
-            </div>
-            <div class="etc">
-              <h3 class="skillset__title">Etc</h3>
-              <ul class="etc__list">
-                <li><span>Git</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Work -->
-    <section id="work" class="section">
-      <div class="section__container">
-        <h1 class="work__title">My work</h1>
-        <h3 class="work__projects">Projects</h3>
-        <div class="work__categories">
-          <button class="category__btn selected" data-filter="*">
-            All<span class="category__count">8</span>
-          </button>
-          <button class="category__btn" data-filter="Front-end">
-            Front-end<span class="category__count">3</span>
-          </button>
-          <button class="category__btn" data-filter="Back-end">
-            Back-end<span class="category__count">3</span>
-          </button>
-          <button class="category__btn" data-filter="Mobile">
-            Mobile<span class="category__count">2</span>
-          </button>
-        </div>
-        <div class="work__projects">
-          <a href="" class="project" target="_blank" data-type="Front-end">
-            <img src="./imgs/project1.jpg" alt="" class="project__img" />
-            <div class="project__description">
-              <h3>Android Project</h3>
-              <span>JAVA</span>
-            </div>
-          </a>
-          <a href="" class="project" target="_blank" data-type="Back-end">
-            <img src="./imgs/project2.jpg" alt="" class="project__img" />
-            <div class="project__description">
-              <h3>Android Project</h3>
-              <span>JAVA</span>
-            </div>
-          </a>
-          <a href="" class="project" target="_blank" data-type="Mobile">
-            <img src="./imgs/project2.jpg" alt="" class="project__img" />
-            <div class="project__description">
-              <h3>Android Project</h3>
-              <span>JAVA</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
-      <h1>Testimonials</h1>
-      <h3>See whatthey say about me</h3>
-      <div class="testimonials">
-        <div class="testimonial">
-          <img
-            src="./imgs/testimonial/너2.jpg"
-            alt=""
-            class="testmonial__avatar"
-          />
-          <div class="testimonial__speech-buble">
-            <p>아무말</p>
-            <p class="name"><a href="">b9's</a> / KDB</p>
-          </div>
-        </div>
-        <div class="testimonial">
-          <div class="testimonial__speech-buble">
-            <p>아무말</p>
-            <p class="name"><a href="">b9's</a> / KDB</p>
-          </div>
-          <img
-            src="./imgs/testimonial/너2.jpg"
-            alt=""
-            class="testmonial__avatar"
-          />
-        </div>
-      </div>
-    </section>
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="section__container">
-        <h1 class="contact__title">Let's talk</h1>
-        <h2 class="contact__email">love2ysj@nate.com</h2>
-        <div class="contact__links">
-          <a href="https://github.com/yoosangjun/portfolio"
-            ><i class="fab fa-git"></i
-          ></a>
-          <a href="https://github.com/yoosangjun/portfolio"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </div>
-        <p class="contact__right">2021 b9's - All rights reserved</p>
-      </div>
-    </section>
+    <header>
+      <nav>
+        <div class="main__logo">이미지</div>
+        <ul>
+          <li>스포츠중계</li>
+          <li>보증업체</li>
+          <li>라이브스코어</li>
+          <li>커뮤니티</li>
+          <li>스포츠분석</li>
+          <li>미니게임</li>
+          <li>고객센터</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside>
+        <section>로그인</section>
+        <section>채팅창 및 배너</section>
+        <section>랭킹??(컨텐츠)</section>
+      </aside>
+      <article>
+        <section>
+          <div>최신글(게시판)</div>
+          <div>커뮤니티 게시판 목록</div>
+        </section>
+        <section>티비자리</section>
+      </article>
+    </main>
+
+    <footer></footer>
   </body>
 </html>
